@@ -18,7 +18,7 @@ export class AppComponent {
   }
 
   onSubmit() {
-    this.db.list('/items').push({ content: this.itemValue });
+    this.db.list('/items').push({ itemValue: this.itemValue });
     this.itemValue = '';
   }
 }
